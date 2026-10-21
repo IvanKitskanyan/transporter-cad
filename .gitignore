@@ -18,3 +18,5 @@ Thumbs.db
 .DS_Store
 __pycache__/
 вариант без трансфера/
+test_konveyer.dwg
+konveyer.dxf
