@@ -22,8 +22,6 @@
 - **🖥️ GUI (WPF)** — a friendly shell with tabs: Assembly, Specification, Library, Scheme (XZ serpentine preview)
 - **🤖 Claude Code skill** — the whole workflow is packaged in `.claude/skills/robbox-cad`; the agent builds a conveyor from a plain-language request (*"build a 4-floor serpentine"*)
 
-![Conveyor BOM](Screenshot_1.png)
-
 ---
 
 ## 🚀 Quick Start
