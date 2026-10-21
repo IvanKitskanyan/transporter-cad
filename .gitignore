@@ -1,0 +1,19 @@
+# Локальные настройки Claude Code
+.claude/settings.local.json
+
+# Локи AutoCAD и временные файлы
+*.dwl
+*.dwl2
+
+# Бэкапы чертежей (производные, не нужны в репозитории)
+*.bak
+
+# Отладочные/одноразовые файлы
+dbg_make_spec.txt
+konveyer_spec_report.txt
+*.log
+
+# Системный мусор
+Thumbs.db
+.DS_Store
+__pycache__/

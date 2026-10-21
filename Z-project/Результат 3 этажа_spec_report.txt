@@ -1,0 +1,2 @@
+SPEC OF: C:\RobBox\ai\project\Z-project\Результат 3 этажа.dwg  modelspace entities: 10
+ROWS: 10

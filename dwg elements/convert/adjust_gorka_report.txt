@@ -1,0 +1,6 @@
+fz new=0.9263 target top=3095.857 tgt bbox min=(39310.404,-1536.761,-166.203)
+OPEN-DOC C:\RobBox\ai\project\konveyer.dwg
+BEFORE gorka (39310.404,-1536.761,-174.437)..(50000,-731.261,3249.226) zscale=0.9722
+MOVE gorka by (0,0,-17.683)
+AFTER  gorka (39310.404,-1536.761,-166.203)..(50000,-731.261,3095.857)
+SAVED doc.Save()

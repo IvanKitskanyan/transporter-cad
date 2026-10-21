@@ -1,0 +1,136 @@
+{
+    "output":  {
+                   "dwg":  "C:\\RobBox\\ai\\project\\konveyer_gui.dwg",
+                   "dxf":  false
+               },
+    "elements_lib":  "C:/RobBox/ai/project/.claude/skills/robbox-cad/lib/elements.json",
+    "floor_gap":  3000,
+    "lines":  [
+                  {
+                      "id":  "floor1",
+                      "z":  0,
+                      "y":  0,
+                      "x_start":  0,
+                      "length":  10000,
+                      "element":  "section",
+                      "note":  ""
+                  },
+                  {
+                      "id":  "floor2",
+                      "z":  3000,
+                      "y":  0,
+                      "x_start":  0,
+                      "length":  20000,
+                      "element":  "section",
+                      "note":  ""
+                  },
+                  {
+                      "id":  "floor3",
+                      "z":  6000,
+                      "y":  0,
+                      "x_start":  0,
+                      "length":  30000,
+                      "element":  "section",
+                      "note":  ""
+                  }
+              ],
+    "drops":  [
+                  {
+                      "upper":  "floor3",
+                      "lower":  "floor2",
+                      "side":  "east",
+                      "gorka":  "gorka",
+                      "transfer":  "transfer"
+                  },
+                  {
+                      "upper":  "floor2",
+                      "lower":  "floor1",
+                      "side":  "west",
+                      "gorka":  "gorka",
+                      "transfer":  "transfer"
+                  }
+              ],
+    "extras":  [
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   },
+                   {
+                       "element":  "",
+                       "ins":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+                       "rot":  0
+                   }
+               ]
+}

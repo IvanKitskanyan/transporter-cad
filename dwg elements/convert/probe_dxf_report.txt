@@ -1,0 +1,7 @@
+CADEngine: 25.1s (LMS Tech)
+====
+OPEN: C:\RobBox\ai\project\dxf elements\section.dxf
+ERROR on C:\RobBox\ai\project\dxf elements\section.dxf: RETRIES-EXHAUSTED
+====
+OPEN: C:\RobBox\ai\project\dxf elements\gorka.dxf
+ERROR on C:\RobBox\ai\project\dxf elements\gorka.dxf: RETRIES-EXHAUSTED

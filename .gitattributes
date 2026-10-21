@@ -1,0 +1,12 @@
+# Git LFS для больших CAD-бинарников
+*.dwg filter=lfs diff=lfs merge=lfs -text
+*.dxf filter=lfs diff=lfs merge=lfs -text
+*.msi filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+
+# Нормализация окончаний строк для текстовых файлов
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.json text eol=crlf
+*.md text eol=crlf

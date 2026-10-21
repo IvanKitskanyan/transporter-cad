@@ -1,0 +1,23 @@
+FILE: C:/RobBox/ai/project/dxf elements/gorka.dxf
+HDR $ACADVER = AC1032
+HDR $INSBASE = 0.0 | 0.0 | 0.0
+HDR $EXTMIN = 114914.8201575142 | 71877.45051432583 | -619.6294300394346
+HDR $EXTMAX = 205291.3498855093 | 80955.27452575757 | 8856.628952369414
+blockdefs: 186
+modelspace top-level entities: 12
+[0] SECTION
+[1] INSERT '*U102' rot=270 s=(1,1,1) origin=(0,0,0)
+       BBOX (-352.5,-11086.59,-100) .. (352.5,0,0)  SIZE (705,11086.59,100)
+       along X: end1 (0,0,-50)  end2 (0,-11086.6,-50)
+[2] ATTRIB
+[3] ATTRIB
+[4] INSERT '*U190' rot=270 s=(1,1,1) origin=(0,0,0)
+       BBOX (0,-353.75,0) .. (0,353.75,0)  SIZE (0,707.5,0)
+       along X: end1 (0,353.8,0)  end2 (0,-353.8,0)
+[5] ATTRIB
+[6] ATTRIB
+[7] ATTRIB
+[8] INSERT '*U646' - no geometry
+[9] INSERT '*U647' - no geometry
+[10] VIEWPORT
+[11] VIEWPORT

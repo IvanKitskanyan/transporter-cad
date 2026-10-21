@@ -1,0 +1,19 @@
+PLAN file: C:\RobBox\ai\project\.claude\skills\robbox-cad\configs\gui_last.json
+ANCHOR floor2: x_start 0 -> -689.596 (d=-689.596), y 0 -> -1083.761 (d=-1083.761)
+ANCHOR floor1: x_start 0 -> 10000 (d=10000), y 0 -> 0 (d=0)
+LINE floor1 z=0 y=0 x=10000..20000  elem=section n=1 pitch=10000 scaleX=0.854701512163557
+PLACE line:floor1:0  (10000,-352.5,-191.5)..(20000,352.5,105)
+LINE floor2 z=3000 y=-1083.761 x=-689.595999999998..19310.404  elem=section n=2 pitch=10000 scaleX=0.854701512163557
+PLACE line:floor2:0  (-689.6,-1436.26,2808.5)..(9310.4,-731.26,3105)
+PLACE line:floor2:1  (9310.4,-1436.26,2808.5)..(19310.4,-731.26,3105)
+LINE floor3 z=6000 y=0 x=0..30000  elem=section n=3 pitch=10000 scaleX=0.854701512163557
+PLACE line:floor3:0  (0,-352.5,5808.5)..(10000,352.5,6105)
+PLACE line:floor3:1  (10000,-352.5,5808.5)..(20000,352.5,6105)
+PLACE line:floor3:2  (20000,-352.5,5808.5)..(30000,352.5,6105)
+DROP floor3->floor2 side=east rot=0 fz=0.926300089013891 lowerY=-1083.761
+PLACE gorka:floor3->floor2  (19310.4,-1536.76,2833.8)..(30000,-731.26,6095.86)
+PLACE transfer:floor3  (29946.77,-1443.5,5827.33)..(30851.77,352.5,6195.86)
+DROP floor2->floor1 side=west rot=180 fz=0.926300089013891 lowerY=0
+MOVE gorka:floor2->floor1 by (0,158917.028,0)
+PLACE gorka:floor2->floor1  (-689.6,-352.5,-166.2)..(10000,453,3095.86)
+PLACE transfer:floor2  (-891.96,-1436.26,2827.33)..(13.04,359.74,3195.86)

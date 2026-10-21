@@ -1,0 +1,4 @@
+(vl-load-com)
+(princ (strcat "\nDWGNAME=[" (getvar "DWGNAME") "]"))
+(princ (strcat "\nMODELCOUNT=" (itoa (vla-get-count (vla-get-modelspace (vla-get-activedocument (vlax-get-acad-object))))) "\n"))
+(princ)

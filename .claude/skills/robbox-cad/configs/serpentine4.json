@@ -1,0 +1,21 @@
+{
+  "output": {
+    "dwg": "C:/RobBox/ai/project/konveyer4.dwg",
+    "dxf": true
+  },
+  "elements_lib": "C:/RobBox/ai/project/.claude/skills/robbox-cad/lib/elements.json",
+  "floor_gap": 3000,
+  "lines": [
+    { "id": "floor4", "z": 9000, "y": 0,        "x_start": 0, "length": 50000, "element": "section" },
+    { "id": "floor3", "z": 6000, "y": -1083.761,  "x_start": -10689.596, "length": 50000, "element": "section" },
+    { "id": "floor2", "z": 3000, "y": 0,        "x_start": 0, "length": 50000, "element": "section" },
+    { "id": "floor1", "z": 0,    "y": -1083.761,  "x_start": 9310.404, "length": 30000, "element": "section",
+      "note": "зона сортировки на восточном конце" }
+  ],
+  "drops": [
+    { "upper": "floor4", "lower": "floor3", "side": "east", "gorka": "gorka", "transfer": "transfer" },
+    { "upper": "floor3", "lower": "floor2", "side": "west", "gorka": "gorka", "transfer": "transfer" },
+    { "upper": "floor2", "lower": "floor1", "side": "east", "gorka": "gorka", "transfer": "transfer" }
+  ],
+  "extras": []
+}

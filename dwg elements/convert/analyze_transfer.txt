@@ -1,0 +1,31 @@
+FILE: C:/RobBox/ai/project/dxf elements/transfer.dxf
+HDR $ACADVER = AC1032
+HDR $INSBASE = 0.0 | 0.0 | 0.0
+HDR $EXTMIN = 121236.4383706492 | 77907.99928662565 | -541.9015616691642
+HDR $EXTMAX = 205291.3498855093 | 80955.27452575757 | 8856.628952369414
+blockdefs: 184
+modelspace top-level entities: 18
+[0] SECTION
+[1] INSERT '*U86' rot=270 s=(1,1,1) origin=(0,0,0)
+       BBOX (-452.5,-1080,-100) .. (452.5,0,0)  SIZE (905,1080,100)
+       along X: end1 (0,0,-50)  end2 (0,-1080,-50)
+[2] ATTRIB
+[3] ATTRIB
+[4] ATTRIB
+[5] ATTRIB
+[6] INSERT '*U746' rot=0 s=(1,1,1) origin=(0,0,0)
+       BBOX (-324.7,-352.5,-100) .. (324.7,352.5,7.64)  SIZE (649.4,705,107.64)
+       along Y: end1 (0,-352.5,-46.2)  end2 (0,352.5,-46.2)
+[7] ATTRIB
+[8] ATTRIB
+[9] INSERT '*U746' rot=0 s=(1,1,1) origin=(0,0,0)
+       BBOX (-324.7,-352.5,-100) .. (324.7,352.5,7.64)  SIZE (649.4,705,107.64)
+       along Y: end1 (0,-352.5,-46.2)  end2 (0,352.5,-46.2)
+[10] ATTRIB
+[11] ATTRIB
+[12] INSERT '*U189' - no geometry
+[13] INSERT '*U163' - no geometry
+[14] INSERT 'Robbox ILT' - no geometry
+[15] INSERT 'Robbox РєРІР°С‚СЂРѕРЅРёРє 8С…' - no geometry
+[16] VIEWPORT
+[17] VIEWPORT

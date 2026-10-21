@@ -1,0 +1,3 @@
+(load "C:\\RobBox\\ai\\project\\dwg elements\\convert\\measure.lsp")
+(meas "C:\\RobBox\\ai\\project\\dwg elements\\convert\\report_gorka.txt")
+(princ)

@@ -1,0 +1,13 @@
+{
+  "output": { "dwg": "C:/RobBox/ai/project/test_konveyer.dwg", "dxf": false },
+  "elements_lib": "C:/RobBox/ai/project/.claude/skills/robbox-cad/lib/elements.json",
+  "floor_gap": 3000,
+  "lines": [
+    { "id": "floor2", "z": 3000, "y": 0,       "x_start": 0, "length": 50000, "element": "section" },
+    { "id": "floor1", "z": 0,    "y": -1083.761, "x_start": 9310.404, "length": 30000, "element": "section" }
+  ],
+  "drops": [
+    { "upper": "floor2", "lower": "floor1", "side": "east", "gorka": "gorka", "transfer": "transfer" }
+  ],
+  "extras": []
+}
