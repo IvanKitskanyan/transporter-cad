@@ -1,5 +1,5 @@
 {
-  "_schema": "Библиотека элементов RobBox. raw = union-bbox modelspace из DWG (координаты «домашней» сцены). datum_* — точки склейки; заполняются после замера. Новые элементы добавляются скриптом scripts/probe_element.ps1, затем datums вручную.",
+  "_schema": "Библиотека элементов Transporter. raw = union-bbox modelspace из DWG (координаты «домашней» сцены). datum_* — точки склейки; заполняются после замера. Новые элементы добавляются скриптом scripts/probe_element.ps1, затем datums вручную.",
   "section": {
     "label": "Секция горизонтальная",
     "dwg": "C:/RobBox/ai/project/dwg elements/секция горизонтальная.dwg",

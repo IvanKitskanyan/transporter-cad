@@ -1,6 +1,6 @@
 ﻿<#
-  RobBox CAD конструктор — GUI-обёртка скилла robbox-cad
-  Запуск: robbox_gui.cmd (powershell -STA -File robbox_gui.ps1)
+  Transporter CAD конструктор — GUI-обёртка скилла transporter-cad
+  Запуск: transporter_gui.cmd (powershell -STA -File transporter_gui.ps1)
   Файл ОБЯЗАТЕЛЬНО в UTF-8 с BOM (кириллица в коде).
 #>
 param()
@@ -14,7 +14,7 @@ if ([Threading.Thread]::CurrentThread.ApartmentState -ne 'STA') {
 Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
 
 $Project  = 'C:\RobBox\ai\project'
-$SkillDir = Join-Path $Project '.claude\skills\robbox-cad'
+$SkillDir = Join-Path $Project '.claude\skills\transporter-cad'
 $LibPath  = Join-Path $SkillDir 'lib\elements.json'
 $ScrDir   = Join-Path $SkillDir 'scripts'
 $ConvDir  = Join-Path $Project 'dwg elements\convert'
@@ -70,7 +70,7 @@ function New-Row($pairs) {
 [xml]$xaml = @'
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="RobBox CAD конструктор" Width="1080" Height="800" WindowStartupLocation="CenterScreen" Name="wnd">
+        Title="Transporter CAD конструктор" Width="1080" Height="800" WindowStartupLocation="CenterScreen" Name="wnd">
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="*"/>

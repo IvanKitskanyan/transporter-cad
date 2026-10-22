@@ -1,7 +1,7 @@
 ﻿param(
   [Parameter(Mandatory=$true)][string]$Dwg,
   [Parameter(Mandatory=$true)][string]$Name,
-  [string]$Lib = 'C:\RobBox\ai\project\.claude\skills\robbox-cad\lib\elements.json'
+  [string]$Lib = 'C:\RobBox\ai\project\.claude\skills\transporter-cad\lib\elements.json'
 )
 $ErrorActionPreference = 'Continue'
 $RPT = 'C:\RobBox\ai\project\dwg elements\convert\probe_' + $Name + '.txt'

@@ -1,4 +1,4 @@
-# 🏭 RobBox CAD — конструктор конвейерных систем
+# 🏭 Transporter CAD — конструктор конвейерных систем
 
 > 🇬🇧 [English version](README.md)
 
@@ -20,7 +20,7 @@
 - **📋 Спецификация (BOM)** — из любого DWG: CSV (UTF-8, открывается в Excel) + Markdown-сводка по типам элементов, суммарным длинам и линиям этажей
 - **📚 Расширяемая библиотека элементов** — `probe_element.ps1` замеряет новую DWG-модель и добавляет её в `elements.json`
 - **🖥️ GUI (WPF)** — удобная оболочка: вкладки «Сборка», «Спецификация», «Библиотека», «Схема» (XZ-предпросмотр серпантина)
-- **🤖 Скилл для Claude Code** — вся логика зашита в `.claude/skills/robbox-cad`, агент собирает конвейер по текстовой команде («собери серпантин на 4 этажа»)
+- **🤖 Скилл для Claude Code** — вся логика зашита в `.claude/skills/transporter-cad`, агент собирает конвейер по текстовой команде («собери серпантин на 4 этажа»)
 
 ---
 
@@ -29,7 +29,7 @@
 ### Вариант 1 — GUI (для пользователей)
 
 ```bat
-Prog\robbox_gui.cmd
+Prog\transporter_gui.cmd
 ```
 
 Запускается окно с четырьмя вкладками:
@@ -45,18 +45,18 @@ Prog\robbox_gui.cmd
 
 ```powershell
 # Сборка конвейера по конфигу
-powershell -File .claude/skills/robbox-cad/scripts/build_conveyor.ps1 -Config configs/serpentine4.json
+powershell -File .claude/skills/transporter-cad/scripts/build_conveyor.ps1 -Config configs/serpentine4.json
 
 # Спецификация по готовому DWG
-powershell -File .claude/skills/robbox-cad/scripts/make_spec.ps1 -Dwg konveyer.dwg -Lib lib/elements.json -Out konveyer_spec
+powershell -File .claude/skills/transporter-cad/scripts/make_spec.ps1 -Dwg konveyer.dwg -Lib lib/elements.json -Out konveyer_spec
 
 # Добавление нового элемента в библиотеку
-powershell -File .claude/skills/robbox-cad/scripts/probe_element.ps1 -Dwg "dwg elements/новый.dwg" -Name noviy
+powershell -File .claude/skills/transporter-cad/scripts/probe_element.ps1 -Dwg "dwg elements/новый.dwg" -Name noviy
 ```
 
 ### Вариант 3 — Claude Code (AI-агент)
 
-Скилл `robbox-cad` подхватывается автоматически. Достаточно написать, например: *«собери конвейер на 3 этажа, спуск на запад, зона сортировки на первом этаже»* — агент составит конфиг, запустит сборку, проверит стыки по bbox и выдаст таблицу размещений.
+Скилл `transporter-cad` подхватывается автоматически. Достаточно написать, например: *«собери конвейер на 3 этажа, спуск на запад, зона сортировки на первом этаже»* — агент составит конфиг, запустит сборку, проверит стыки по bbox и выдаст таблицу размещений.
 
 ---
 
@@ -87,9 +87,9 @@ flowchart LR
 
 ```
 ├── Prog/
-│   ├── robbox_gui.cmd              # лаунчер GUI (powershell -STA)
-│   └── robbox_gui.ps1              # WPF-оболочка
-├── .claude/skills/robbox-cad/      # скилл Claude Code
+│   ├── transporter_gui.cmd              # лаунчер GUI (powershell -STA)
+│   └── transporter_gui.ps1              # WPF-оболочка
+├── .claude/skills/transporter-cad/      # скилл Claude Code
 │   ├── SKILL.md                    # правила, датумы, формулы серпантина
 │   ├── scripts/
 │   │   ├── build_conveyor.ps1      # сборка конвейера

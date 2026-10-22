@@ -1,4 +1,4 @@
-PLAN file: C:\RobBox\ai\project\.claude\skills\robbox-cad\configs\gui_last.json
+PLAN file: C:\RobBox\ai\project\.claude\skills\transporter-cad\configs\gui_last.json
 ANCHOR floor2: x_start 0 -> -689.596 (d=-689.596), y 0 -> -1083.761 (d=-1083.761)
 ANCHOR floor1: x_start 0 -> 10000 (d=10000), y 0 -> 0 (d=0)
 LINE floor1 z=0 y=0 x=10000..20000  elem=section n=1 pitch=10000 scaleX=0.854701512163557

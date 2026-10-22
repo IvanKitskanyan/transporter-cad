@@ -1,4 +1,4 @@
-# 🏭 RobBox CAD — Conveyor System Designer
+# 🏭 Transporter CAD — Conveyor System Designer
 
 > 🇷🇺 [Русская версия (Russian version)](README.ru.md)
 
@@ -20,7 +20,7 @@
 - **📋 Bill of materials (BOM)** — from any DWG: CSV (UTF-8, opens in Excel) + Markdown summary by element type, total lengths and floor lines
 - **📚 Extensible element library** — `probe_element.ps1` measures a new DWG model and registers it in `elements.json`
 - **🖥️ GUI (WPF)** — a friendly shell with tabs: Assembly, Specification, Library, Scheme (XZ serpentine preview)
-- **🤖 Claude Code skill** — the whole workflow is packaged in `.claude/skills/robbox-cad`; the agent builds a conveyor from a plain-language request (*"build a 4-floor serpentine"*)
+- **🤖 Claude Code skill** — the whole workflow is packaged in `.claude/skills/transporter-cad`; the agent builds a conveyor from a plain-language request (*"build a 4-floor serpentine"*)
 
 ---
 
@@ -29,7 +29,7 @@
 ### Option 1 — GUI (for users)
 
 ```bat
-Prog\robbox_gui.cmd
+Prog\transporter_gui.cmd
 ```
 
 Opens a window with four tabs:
@@ -45,18 +45,18 @@ Opens a window with four tabs:
 
 ```powershell
 # Build a conveyor from a config
-powershell -File .claude/skills/robbox-cad/scripts/build_conveyor.ps1 -Config configs/serpentine4.json
+powershell -File .claude/skills/transporter-cad/scripts/build_conveyor.ps1 -Config configs/serpentine4.json
 
 # BOM for a finished DWG
-powershell -File .claude/skills/robbox-cad/scripts/make_spec.ps1 -Dwg konveyer.dwg -Lib lib/elements.json -Out konveyer_spec
+powershell -File .claude/skills/transporter-cad/scripts/make_spec.ps1 -Dwg konveyer.dwg -Lib lib/elements.json -Out konveyer_spec
 
 # Register a new element in the library
-powershell -File .claude/skills/robbox-cad/scripts/probe_element.ps1 -Dwg "dwg elements/new.dwg" -Name new_elem
+powershell -File .claude/skills/transporter-cad/scripts/probe_element.ps1 -Dwg "dwg elements/new.dwg" -Name new_elem
 ```
 
 ### Option 3 — Claude Code (AI agent)
 
-The `robbox-cad` skill activates automatically. Just write, e.g., *"build a 3-floor conveyor, west drop, sorting zone on floor 1"* — the agent composes the config, runs the build, verifies joints by bounding boxes and reports a placement table.
+The `transporter-cad` skill activates automatically. Just write, e.g., *"build a 3-floor conveyor, west drop, sorting zone on floor 1"* — the agent composes the config, runs the build, verifies joints by bounding boxes and reports a placement table.
 
 ---
 
@@ -87,9 +87,9 @@ flowchart LR
 
 ```
 ├── Prog/
-│   ├── robbox_gui.cmd              # GUI launcher (powershell -STA)
-│   └── robbox_gui.ps1              # WPF shell
-├── .claude/skills/robbox-cad/      # Claude Code skill
+│   ├── transporter_gui.cmd              # GUI launcher (powershell -STA)
+│   └── transporter_gui.ps1              # WPF shell
+├── .claude/skills/transporter-cad/      # Claude Code skill
 │   ├── SKILL.md                    # rules, datums, serpentine formulas
 │   ├── scripts/
 │   │   ├── build_conveyor.ps1      # conveyor assembly

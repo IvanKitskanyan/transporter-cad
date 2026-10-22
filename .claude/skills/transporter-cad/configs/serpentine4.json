@@ -3,7 +3,7 @@
     "dwg": "C:/RobBox/ai/project/konveyer4.dwg",
     "dxf": true
   },
-  "elements_lib": "C:/RobBox/ai/project/.claude/skills/robbox-cad/lib/elements.json",
+  "elements_lib": "C:/RobBox/ai/project/.claude/skills/transporter-cad/lib/elements.json",
   "floor_gap": 3000,
   "lines": [
     { "id": "floor4", "z": 9000, "y": 0,        "x_start": 0, "length": 50000, "element": "section" },

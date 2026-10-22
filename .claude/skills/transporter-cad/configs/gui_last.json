@@ -3,7 +3,7 @@
                    "dwg":  "C:\\RobBox\\ai\\project\\konveyer_gui.dwg",
                    "dxf":  false
                },
-    "elements_lib":  "C:/RobBox/ai/project/.claude/skills/robbox-cad/lib/elements.json",
+    "elements_lib":  "C:/RobBox/ai/project/.claude/skills/transporter-cad/lib/elements.json",
     "floor_gap":  3000,
     "lines":  [
                   {

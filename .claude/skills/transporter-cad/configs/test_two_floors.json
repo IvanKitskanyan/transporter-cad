@@ -1,6 +1,6 @@
 {
   "output": { "dwg": "C:/RobBox/ai/project/test_konveyer.dwg", "dxf": false },
-  "elements_lib": "C:/RobBox/ai/project/.claude/skills/robbox-cad/lib/elements.json",
+  "elements_lib": "C:/RobBox/ai/project/.claude/skills/transporter-cad/lib/elements.json",
   "floor_gap": 3000,
   "lines": [
     { "id": "floor2", "z": 3000, "y": 0,       "x_start": 0, "length": 50000, "element": "section" },

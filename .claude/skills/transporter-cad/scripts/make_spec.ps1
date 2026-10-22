@@ -1,6 +1,6 @@
 ﻿param(
   [Parameter(Mandatory=$true)][string]$Dwg,
-  [string]$Lib = 'C:\RobBox\ai\project\.claude\skills\robbox-cad\lib\elements.json',
+  [string]$Lib = 'C:\RobBox\ai\project\.claude\skills\transporter-cad\lib\elements.json',
   [string]$Out = ''
 )
 $ErrorActionPreference = 'Continue'

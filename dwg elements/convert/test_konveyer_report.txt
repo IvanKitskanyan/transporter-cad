@@ -1,4 +1,4 @@
-PLAN file: C:\RobBox\ai\project\.claude\skills\robbox-cad\configs\test_two_floors.json
+PLAN file: C:\RobBox\ai\project\.claude\skills\transporter-cad\configs\test_two_floors.json
 ANCHOR-OK floor1
 LINE floor2 z=3000 y=0 x=0..50000  elem=section n=4 pitch=12500 scaleX=1.06837689020445
 PLACE line:floor2:0  (0,-352.5,2808.5)..(12500,352.5,3105)
